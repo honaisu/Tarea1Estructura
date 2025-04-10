@@ -31,7 +31,7 @@ El programa incluye **5 funciones principales** con las cuáles opera.
 1. `Registrar ticket`: Se encarga de poder agregar un ticket a la lista de sistema de gestión de tickets. Los tickets poseen la **ID del usuario**, un **mensaje con el problema a resolver**, la **hora a la que se hizo el registro** (y su orden de llegada), y la **prioridad del ticket** (**ALTO**, **MEDIO** o **BAJO**, asignado con valores numéricos).
 2. `Asignar prioridad`: Permite poder cambiar la prioridad de un ticket a disposición. Se le otorga una ID, y si el ticket que se desea cambiar está dentro, da la opción de cambiar la prioridad actual a **ALTO**, **MEDIO**, o **BAJO** escribiendo valores numéricos.
 3. `Mostrar lista de tickets`: **Muestra la lista** de los tickets pendientes a ser atendidos. Está **ordenado por orden de prioridad** (de más alta prioridad a más baja), y por la **hora más antigua** (el **orden de llegada**).
-4. `Procesar tickets`: Toma el ticket con mayor prioridad, y con la hora más antigua, y lo procesa mostrando los datos del ticket, y eliminándolo de la lista.
+4. `Procesar tickets`: Toma el ticket con mayor prioridad, y con la hora más antigua, y lo procesa mostrando los datos del ticket, eliminándolo posteriormente de la lista.
 5. `Buscar ticket`: Busca un ticket a disposición dentro de la lista. Se da la opción de ingresar la ID del ticket que se desea buscar, y se muestran los datos correspondientes al ticket (su prioridad, ID, hora de entrada, y problema).
 
 #### Posibles fallas
