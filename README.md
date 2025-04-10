@@ -35,9 +35,10 @@ El programa incluye **5 funciones principales** con las cuáles opera.
 5. `Buscar ticket`: Busca un ticket a disposición dentro de la lista. Se da la opción de ingresar la ID del ticket que se desea buscar, y se muestran los datos correspondientes al ticket (su prioridad, ID, hora de entrada, y problema).
 
 #### Posibles fallas
-Hay **funciones específicas** que no funcionan tan correctamente como se debería:
-- Al momento de usar la función `Registrar ticket`, si es que en el **ID** se ingresa un dato que **no es numérico**.
-- Si se quiere **ingresar un problema** que supera la cantidad máxima de carácteres que se puede (**1000 máximo**), sólo se ingresarán los datos hasta el valor máximo.
+Hay **acciones específicas** que no funcionan tan correctamente como se debería:
+- Al momento de usar la función `Registrar ticket`, si es que en el **ID** se ingresa un dato que **no es numérico**, puede ocasionar problemas al asignar la ID del ticket, junto con no declarar un mensaje al problema.
+- Si se quiere **ingresar un problema** que supera la cantidad máxima de carácteres que se puede (**1000 máximo**), sólo se ingresarán los carácteres hasta el valor máximo.
+- Si se ingresa una opción en el menú que es **mayor o igual a 10**, el programa interpreta el primer carácter cómo su operación y, lo que resta, lo asigna dependiendo de la función.
 ---
 ### Ejemplos de ejecución
 
