@@ -5,20 +5,6 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
-/*
-// Macro para el tamaño máximo de la descripción del problema.
-#define MAX 1000
-// Macro del tamaño máximo del string del tiempo.
-#define M_TIEMPO 50
-
-// Representa un ticket. Posee valores como ID, un problema, prioridad y la hora actual de consulta.
-typedef struct tipoTicket {
-    int ID ; // Valor que se le asignará al ticket. Representa la identificación del cliente.
-    char problema[MAX] ; // Problema a describir por el cliente, posee un máximo ajustable.
-    int prioridad ; // Guardará valores 2 (Alto), 1 (Medio) y 0 (Bajo) que definen su prioridad.
-    char horaActual[M_TIEMPO] ; // Guarda la hora en que el cliente hizo la petición. 
-    clock_t orden ; // Guarda el orden de llegada del ticket.
-} tipoTicket ;*/
 
 //*====================*//
 // FUNCIONES DE TICKETS //
