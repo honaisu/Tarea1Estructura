@@ -33,7 +33,7 @@ void ticket_registrar(List* L) {
     }
 
     // Escanea y guarda el problema a resolver del usuario.
-    puts("Coloque su problema:") ;
+    puts("Coloque su problema (1000 carácteres máximo):") ;
     fgets(datos->problema, MAX, stdin) ;
 
     datos->prioridad = 0 ; // Establece la prioridad a '0' (Bajo) para el dato.

@@ -8,7 +8,7 @@
 // Macro del tamaño máximo del string del tiempo.
 #define M_TIEMPO 50
 
-// Representa un ticket. Posee valores como ID, un problema, prioridad y la hora actual de consulta.
+// Representa un ticket. Posee valores como ID, un problema, prioridad, la hora actual de consulta, y una variable que guarda el orden de llegada.
 typedef struct tipoTicket {
     int ID ; // Valor que se le asignará al ticket. Representa la identificación del cliente.
     char problema[MAX] ; // Problema a describir por el cliente, posee un máximo ajustable.
