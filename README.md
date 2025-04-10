@@ -3,7 +3,7 @@
 ### Descripción
 Este programa fue creado para gestionar de forma correcta distintos tickets que se le vayan otorgando. Cada **ticket** posee datos que hacen que se pueda **identificar un cliente** con un **problema clave** a resolver. 
 
-El programa busca poder hacer que el **sistema de gestión** sea lo más **directo** y **simple** posible en situaciones de **soporte o apoyo técnico**, otorgando una herramienta de registro y búsqueda de tickets, un sistema de prioridades, mostrar los tickets pendientes a ser procesados y atender el ticket con mayor prioridad (y más antiguo).
+El programa busca poder hacer que el **sistema de gestión** sea lo más **directo** y **simple** posible en situaciones de **soporte o apoyo técnico**, otorgando herramientas de registro y búsqueda de tickets, un sistema de prioridades, mostrar los tickets pendientes a ser procesados y atender el ticket con mayor prioridad (y más antiguo).
 
 ### Requerimientos
 - Tener instalado **Visual Studio Code**, junto con la extensión C/C++ de Microsoft.
@@ -28,7 +28,7 @@ Una forma alternativa de compilación, dentro de **Windows**, sería:
 
 ### Funciones del programa
 El programa incluye **5 funciones principales** con las cuáles opera. 
-1. `Registrar ticket`: Se encarga de poder agregar un ticket a la lista de sistema de gestión de tickets. Los tickets poseen la **ID del usuario**, un **mensaje con el problema a resolver**, la **hora a la que se hizo el registro** (y su orden de llegada), y la **prioridad del ticket** (**ALTO**, **MEDIO** o **BAJO**).
+1. `Registrar ticket`: Se encarga de poder agregar un ticket a la lista de sistema de gestión de tickets. Los tickets poseen la **ID del usuario**, un **mensaje con el problema a resolver**, la **hora a la que se hizo el registro** (y su orden de llegada), y la **prioridad del ticket** (**ALTO**, **MEDIO** o **BAJO**, asignado con valores numéricos).
 2. `Asignar prioridad`: Permite poder cambiar la prioridad de un ticket a disposición. Se le otorga una ID, y si está dentro, da la opción de cambiar la prioridad actual a **ALTO**, **MEDIO**, o **BAJO**.
 3. `Mostrar lista de tickets`: **Muestra la lista** de los tickets pendientes a ser atendidos. Está **ordenado por orden de prioridad** (de más alta prioridad a más baja), y por la **hora más antigua** (el **orden de llegada**).
 4. `Procesar tickets`: Toma el ticket con mayor prioridad, y con la hora más antigua, y lo procesa mostrando los datos del ticket, y eliminándolo de la lista.
@@ -38,7 +38,7 @@ El programa incluye **5 funciones principales** con las cuáles opera.
 Hay **acciones específicas** que no funcionan tan correctamente como se debería:
 - Al momento de usar la función `Registrar ticket`, si es que en el **ID** se ingresa un dato que **no es numérico**, puede ocasionar problemas al asignar la ID del ticket, junto con no declarar un mensaje al problema.
 - Si se quiere **ingresar un problema** que supera la cantidad máxima de carácteres que se puede (**1000 máximo**), sólo se ingresarán los carácteres hasta el valor máximo.
-- Si se ingresa una opción en el menú que es **mayor o igual a 10**, el programa interpreta el primer carácter cómo su operación y, lo que resta, lo asigna dependiendo de la función.
+- Si se ingresa una opción en el menú que **no es sólamente un carácter numérico**, el programa interpreta el primer carácter cómo su operación y, lo que resta, lo asigna dependiendo de la función.
 ---
 ### Ejemplos de ejecución
 
