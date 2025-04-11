@@ -56,6 +56,7 @@ int main() {
 
     puts("Saliendo del programa...") ;
     list_clean(listaTickets) ;
+    free(listaTickets) ;
     
     return 0 ;
 }
