@@ -3,6 +3,8 @@
 #include "list.h"
 #include "tickets.h"
 
+//*** Header con funciones varias. Enfocadas a los otros usos ***//
+
 // Pertenecientes al main
 
 // Muestra el menú de las opciones del programa.
