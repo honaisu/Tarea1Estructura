@@ -36,9 +36,10 @@ El programa incluye **5 funciones principales** con las cuáles opera.
 
 #### Posibles fallas
 Hay **acciones específicas** que no funcionan tan correctamente como se debería:
-- Al momento de usar la función `Registrar ticket`, si es que en el **ID** se ingresa un dato que **no es numérico**, puede ocasionar problemas al asignar la ID del ticket, junto con no declarar un mensaje al problema.
 - Si se quiere **ingresar un problema** que supera la cantidad máxima de carácteres que se puede (**1000 máximo**), sólo se ingresarán los carácteres hasta el valor máximo.
-- Si se ingresa una opción en el menú que **no es sólamente un carácter numérico**, el programa interpreta el primer carácter cómo su operación y, lo que resta, lo asigna dependiendo de la función.
+- Si se ingresa una opción en el menú que **contiene más de un valor numérico (mayor o igual a 10)**, el programa interpreta el primer carácter cómo su operación y, lo que resta de carácteres se desechan.
+- Si se ingresa un mensaje (valores no numéricos) al momento de asignarle prioridad al ticket, en la función `Asignar prioridad`, el valor asignado siempre va a ser `0 (BAJO)`. 
+- Hay veces donde no se muestran ciertos mensajes correspondientes al ingreso de un dato.
 ---
 ### Ejemplos de ejecución
 

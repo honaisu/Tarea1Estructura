@@ -3,44 +3,43 @@
 #include "TDAs/extra_tickets.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 /*********
     ORDEN POR PRIORIDADES
 Cada ticket posee un nivel de urgencia (Alto, Medio y Bajo)
-Programa que registra nuevos tickets, modificar su prioridad, procesarlos y mostrarlos
+Programa que registra nuevos tickets, modificar su prioridad, procesarlos y mostrarlos.
 **********/
 
 int main() {
     char opcion ;
+    char buffer[100] ;
     List *listaTickets = list_create() ;
 
     do {
         mostrarMenuPrincipal() ;
         puts("Seleccione su opción: ") ;
-        scanf(" %c", &opcion) ;
+        fgets(buffer, sizeof(buffer), stdin) ;
+        sscanf(buffer, "%c", &opcion) ;
 
         switch (opcion) {
-            case '1': { // Registrar el ticket
+            case '1': { // Registra el ticket.
                 ticket_registrar(listaTickets) ;
                 break ;
             }
-            case '2': { // Asignar prioridad a un ticket
+            case '2': { // Asigna prioridad a un ticket.
                 ticket_asignarPrioridad(listaTickets) ;
-                getchar() ;
                 break ;
             }
-            case '3': // Mostrar la lista de tickets pendientes
+            case '3': // Mostra la lista de tickets pendientes.
                 ticket_mostrarPendientes(listaTickets) ;
-                getchar() ;
                 break ;
-            case '4': { // Procesar el ticket siguiente y eliminar el que estaba
+            case '4': { // Procesa el ticket con más prioridad y más antiguo y lo elimina de la lista.
                 ticket_procesarSiguiente(listaTickets) ;
-                getchar() ;
                 break ;
             }
-            case '5': { // Buscar cierto ticket
+            case '5': { // Busca cierto ticket dentro de la lista.
                 ticket_buscar(listaTickets) ;
-                getchar() ;
                 break ;
             }
             case '0': {
@@ -48,15 +47,14 @@ int main() {
             }
             default: { // En caso de que ninguna opción sea la indicada en los casos
                 puts("Opción no válida. Por favor, ingrese una de las opciones presentadas.") ;
-                getchar() ;
             }
         }
-        if (opcion != '0') esperarEnter() ;
+        if (opcion != '0') esperarEnter() ; // Si la opción es distinta a 0, espera ENTER para continuar.
     } while (opcion != '0') ;
 
     puts("Saliendo del programa...") ;
-    list_clean(listaTickets) ;
-    free(listaTickets) ;
+    list_clean(listaTickets) ; // Quita todos los elementos de la lista.
+    free(listaTickets) ; // Libera la memoria asignada por la lista.
     
     return 0 ;
 }
