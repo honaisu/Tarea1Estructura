@@ -6,13 +6,13 @@
 #include <time.h>
 
 
-void imprimirSeparador(char* sep, char* string) {
+void imprimirSeparador(const char* sep, const char* string) {
     puts(sep) ;
     puts(string) ;
     puts(sep) ;
 }
 
-void imprimirTicket(tipoTicket* D) {
+void imprimirTicket(const tipoTicket* D) {
     char* prioridadF ;
     switch (D->prioridad) {
         case 0 : { prioridadF = "BAJA" ; break ; }

@@ -21,9 +21,9 @@ int listaEstaVacia(List*) ;
 // Asigna un string con el tiempo actual del sistema.
 void asignarTiempo(char*) ; 
 // Imprime separadores. La primer variable siendo el separador, y la segunda el mensaje.
-void imprimirSeparador(char*, char*) ; 
+void imprimirSeparador(const char*, const char*) ; 
 // Imprime los datos del ticket correspondiente.
-void imprimirTicket(tipoTicket*) ; 
+void imprimirTicket(const tipoTicket*) ; 
 // Ordena dos variables de cualquier dato. Para Tickets, ordena por prioridad y hora.
 int ordenar(void*, void*) ; 
 
