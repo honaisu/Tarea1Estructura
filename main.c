@@ -19,7 +19,9 @@ int main() {
     do {
         mostrarMenuPrincipal() ;
         puts("Seleccione su opción: ") ;
+        // Lee los datos que se quieren.
         fgets(buffer, sizeof(buffer), stdin) ;
+        // Toma el primer caracter de buffer y lo guarda en la variable opcion.
         sscanf(buffer, "%c", &opcion) ;
 
         switch (opcion) {
