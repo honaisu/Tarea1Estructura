@@ -15,7 +15,7 @@ Para compilarlo, dentro del sistema operativo **Windows**, es necesario:
 1. Descargar este **repositorio** como archivo `zip` (haciendo **click** en la sección `code`, y apretando el botón de `Descargar ZIP`).
 2. Abrir el **explorador de archivos** y navegar hasta el archivo `zip` para descomprimirlo. Una vez descomprimido, abrir el directorio con los archivos del programa.
 3. Abrir el archivo `main.c` del `zip` en **Visual Studio Code**.
-4. Dentro de **Visual Studio Code**, abrir el **terminal** para poder compilar el programa.
+4. Dentro de **Visual Studio Code**, abrir el **terminal** y dirigirse a la dirección del repositorio, para poder compilar el programa.
 5. Ejecutar el siguiente comando: `gcc TDAs/*.c *.c -o programa.exe`.
 6. Abrir el archivo `programa.exe`, o escribir la línea `./programa.exe` en **Visual Studio Code** para ejecutarlo.
 
